@@ -1,4 +1,60 @@
-<p><strong style="color: darkblue;"><img src="data:image/gif;base64,R0lGODlhKQAMAIABAP8AAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJFAABACwAAAAAKQAMAAACQIyPqcvtC4CLrx7asN08RQ1KQahgmgGi4iiSXruq5WrS8fXh7PzVOm/bvX6uGeQmFBaHRpTsuUScasVQjjGVFAAAIfkEBRQAAQAsAAAAACkADAAAAhSMj6nL7Q+jnLTai7PevPsPhuJXAAA7" alt="ChuY" height="10">Cần phải kiểm tra xem mở thành viên chưa,</strong></p>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Files</title>
+    <style>
+        body {
+            background-color: #008000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            background-color: white;
+            color: black;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            margin: 10px;
+        }
+        .download-btn:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.1);
+        }
+        @media (max-width: 600px) {
+            body {
+                text-align: center;
+                padding: 20px;
+            }
+            .download-btn {
+                padding: 14px 28px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="data:image/jpeg;base64,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" alt="Logo" class="logo">
+    <a href="HSNR.jar" download="" class="download-btn">HỒI SINH NGỌC RỒNG - JAVA</a>
+    <a href="HSNR.apk" download="" class="download-btn">HỒI SINH NGỌC RỒNG - Android</a>
+<div style="background-color: #CCCCCC; border: 2px solid #CCCCCC; padding: 10px;">
+    <p><strong style="color: red;"><img src="data:image/gif;base64,R0lGODlhKQAMAIABAP8AAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJFAABACwAAAAAKQAMAAACQIyPqcvtC4CLrx7asN08RQ1KQahgmgGi4iiSXruq5WrS8fXh7PzVOm/bvX6uGeQmFBaHRpTsuUScasVQjjGVFAAAIfkEBRQAAQAsAAAAACkADAAAAhSMj6nL7Q+jnLTai7PevPsPhuJXAAA7" alt="ChuY" height="10">Cầu mở thành viên mới có thể đăng nhập.</strong>
+</p>
+  <p><strong style="color: darkblue;"><img src="data:image/gif;base64,R0lGODlhKQAMAIABAP8AAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJFAABACwAAAAAKQAMAAACQIyPqcvtC4CLrx7asN08RQ1KQahgmgGi4iiSXruq5WrS8fXh7PzVOm/bvX6uGeQmFBaHRpTsuUScasVQjjGVFAAAIfkEBRQAAQAsAAAAACkADAAAAhSMj6nL7Q+jnLTai7PevPsPhuJXAAA7" alt="ChuY" height="10">Cần phải kiểm tra xem mở thành viên chưa,</strong></p>
 <blockquote><strong style="color: darkblue;">
   Giữ màn hình 1-2p để có thể check,
 </strong></blockquote>
@@ -7,3 +63,10 @@
  chỉ check duy nhất 1 lần khi vào game.
 </blockquote></strong>
 <p></p>
+<p></p>     
+    <p></p>
+</div>
+
+
+
+</body></html>
